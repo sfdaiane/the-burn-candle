@@ -16,8 +16,30 @@ p {
     background-color: #20322E;
     font-size: 12px;
     color: #F0F0EE;
-    font-weight: bold;
+    font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 12px;
+}
+
+/* HEADER CONTACT CONTAINER */
+
+.header-contact-container {
+    height: 39px;
+    background-color: #EAEDE9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1.5px solid #20322E;
+}
+
+.header-contact-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    color: #20322E;
+    font-size: 14px;
 }
