@@ -110,3 +110,10 @@ p {
     text-transform: uppercase;
     text-decoration: none;
 }
+
+.banner-section {
+    display: flex;
+    justify-content: center;
+    padding: 25px 10px 80px 10px;
+    
+}
