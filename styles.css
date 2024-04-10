@@ -117,3 +117,24 @@ p {
     padding: 25px 10px 80px 10px;
     
 }
+
+.product-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #20322E;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.dash {
+    border: 1px #20322E solid; 
+}
