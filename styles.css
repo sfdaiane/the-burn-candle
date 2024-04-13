@@ -1,11 +1,10 @@
 body {
     background-color: #F0F0EE;
-    padding: 0;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
 }
 
-p {
+p, h3{
     margin: 0;
 }
 
@@ -122,6 +121,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
 }
 
@@ -137,4 +137,85 @@ p {
 
 .dash {
     border: 1px #20322E solid; 
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 280px;
+    background-color: #E2E6E1;
+}
+
+.image {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    background-image: url("./assets/candle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-info-container {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; 
+}
+
+.card-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.button-card {
+    height: 32px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    border-radius: 4px;
+    background-color: #475D5F;
+    color: #F0F0EE;
+    transition: all 200ms ease-in-out;
+}
+
+.button-card:active {
+    opacity: 0.9;
+}
+
+.button-card:hover {
+    background-color: #2d3738;
+}
+
+
+.card-title {
+    font-size: 14px;
+    color: #475D5F;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 20px;
+    color: #475D5F;
+}
+
+.card-subtitle {
+    font-size: 13px;
+    color: #475D5F;
 }
