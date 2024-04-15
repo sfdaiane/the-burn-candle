@@ -133,6 +133,7 @@ p, h3{
     color: #20322E;
     font-size: 24px;
     font-weight: 600;
+    white-space: nowrap
 }
 
 .dash {
@@ -219,3 +220,30 @@ p, h3{
     font-size: 13px;
     color: #475D5F;
 }
+
+.follow-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 110px;
+}
+
+.social-icons-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.footer-container {
+    height: 39px;
+    background-color: #EAEDE9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1.5px solid #20322E;
+}
+
