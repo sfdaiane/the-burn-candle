@@ -9,10 +9,13 @@ p, h3{
 }
 
 /* Global classes */
-
 .content-size {
     width: 100%;
     max-width: 1200px;
+}
+
+.page-size-padding {
+    padding: 0px 20px;
 }
 
 
@@ -20,7 +23,8 @@ p, h3{
 /* HEADER MESSAGE SECTION */
 
 .header-message-container {
-    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #20322E;
     font-size: 12px;
     color: #F0F0EE;
@@ -29,12 +33,14 @@ p, h3{
     align-items: center;
     justify-content: center;
     font-size: 12px;
+    text-align: center;
 }
 
 /* HEADER CONTACT CONTAINER */
 
 .header-contact-container {
-    height: 39px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #EAEDE9;
     display: flex;
     align-items: center;
@@ -113,7 +119,7 @@ p, h3{
 .banner-section {
     display: flex;
     justify-content: center;
-    padding: 25px 10px 80px 10px;
+    padding: 25px 0 80px 0;
     
 }
 
@@ -239,11 +245,73 @@ p, h3{
 }
 
 .footer-container {
-    height: 39px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #EAEDE9;
     display: flex;
     align-items: center;
     justify-content: center;
     border-top: 1.5px solid #20322E;
 }
+
+.header-contact-content-container P{
+    text-align: center;
+}
+
+.menu-mobile{
+    padding-top: 13px;
+    padding-bottom: 10px;
+    background-color: #EAEDE9;
+    box-shadow: 0px 9px 3px -7px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.menu-mobile div {
+    cursor: pointer;
+    
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    .header-menu-container {
+        display: none;
+        border: solid red 2px;
+    }
+    .menu-mobile {
+        display: flex;
+    }
+    .menu-mobile div {
+        margin-left: 20px;
+    }
+    .menu-mobile div img {
+        width: 30px;
+    }
+    .header-contact-content-container {
+        flex-direction: column;
+        gap: 3px;
+    }
+    .title-container {
+        font-size: 20px;
+    }
+    .banner-section {
+        padding-bottom: 40px;
+    }
+    .products-container {
+        margin-top: 20px;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .follow-us-container  {
+        margin-bottom: 40px;
+    }
+
+}
+
+
 
